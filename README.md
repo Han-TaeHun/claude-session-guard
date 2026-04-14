@@ -12,6 +12,7 @@ Claude Code 사용 중 토큰 제한으로 세션이 중단되었을 때, 다음
 
 | 파일 | 설명 |
 |------|------|
+| `claude-setup.py` | Windows / Linux / macOS Python 셋업 스크립트 (권장) |
 | `claude-setup.ps1` | Windows PowerShell 셋업 스크립트 |
 | `claude-setup.sh` | Linux / macOS bash 셋업 스크립트 |
 | `CLAUDE.md` | 토큰 절약 규칙 + 작업 추적 + 세션 재개 규칙 (스크립트가 생성) |
@@ -22,9 +23,14 @@ Claude Code 사용 중 토큰 제한으로 세션이 중단되었을 때, 다음
 
 ### 1. 셋업
 
-원하는 프로젝트 폴더에서 OS에 맞는 스크립트를 실행합니다.
+원하는 프로젝트 폴더에서 스크립트를 실행합니다.
 
-**Windows (PowerShell):**
+**Python (Windows / Linux / macOS — 권장):**
+```bash
+python claude-setup.py
+```
+
+**Windows (PowerShell — 권한 오류 시 위 Python 방식 사용):**
 ```powershell
 powershell -ExecutionPolicy Bypass -File claude-setup.ps1
 ```
